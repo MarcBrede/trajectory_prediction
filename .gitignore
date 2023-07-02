@@ -1,0 +1,12 @@
+output/trajectory_gnn/*
+output/trajectory_mlp/*
+output/vehicle/*
+virtual_env/*
+*.pyc
+
+!output/vehicle/base_model/model.pth
+!output/vehicle/base_model/options.txt
+
+!output/trajectory_gnn/base_model/model.pth
+!output/trajectory_gnn/base_model/options.txt
+!output/vehicle/base_model/learning.png

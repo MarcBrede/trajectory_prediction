@@ -1,0 +1,7 @@
+{'classes': None,
+ 'data_length': 100000,
+ 'horizon': 1,
+ 'hyperparams': Hyperparams(epochs=1000, patience=150, batch_size=2048, learning_rate=0.0001, learning_rate_patience=300, learning_rate_factor=0.2, learning_rate_minimum=1e-10, weight_decay=1e-07, cool_down=50),
+ 'loss': LossTrajectory(distance_cost=1.0, obstacle_cost=10.0, obstacle_radius=1.0, vehicle_radius=2.0, vehicle_cost=0.0),
+ 'model_name': 'long',
+ 'relative_frame_of_reference': False}
