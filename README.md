@@ -25,7 +25,7 @@ The vehicle model is trained in an unsupervised manner. The loss is based on the
 
 ## Trajectory Model
 
-The trajectory model takes the set of vehicles and obstacles as input and predicts the next intermediate target for each vehicle. The model can either be an MLP with a fixed number of vehicles and obstacles or a GNN with an arbitrary number of them. The GNN connects all vehicles and obstacles in one simulation and uses the [https://arxiv.org/abs/2009.03509](Transformer Conv) edge update to model their relations. The plots show the attention that each vehicle spends towards the obstacles.
+The trajectory model takes the set of vehicles and obstacles as input and predicts the next intermediate target for each vehicle. The model can either be an MLP with a fixed number of vehicles and obstacles or a GNN with an arbitrary number of them. The GNN connects all vehicles and obstacles in one simulation and uses the [Transformer Conv](https://arxiv.org/abs/2009.03509) edge update to model their relations. The plots show the attention that each vehicle spends towards the obstacles.
 
 ### Loss
 
