@@ -51,4 +51,4 @@ The trajectory model is trained in an unsupervised manner. The loss is split int
 ![Two vehicles being guided to their target positions while avoiding one obstacle](./output/example_plots/20.gif)
 
 ## Acknowledgement
-I would like to thank [Yining Ma](https://github.com/yininghase), as we stared this project together.
+I would like to thank [Yining Ma](https://github.com/yininghase) and Qadeer Khan, as we stared this project together.
