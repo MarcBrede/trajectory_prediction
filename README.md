@@ -1,10 +1,10 @@
 # Self-Supervised Multi-Agent Navigation in Unconstrained Environments
 
-This project aims to train a model capable of guiding a vehicle from a starting position to a target position while avoiding collisions. It is based on the paper [Multi-Agent Navigation in Unconstrained Environments](https://arxiv.org/abs/2307.16727). In this paper, a model is trained to guide vehicles in a similar manner. However, it is done in a supervised way with labels obtained from an optimization algorithm that captures labels. In a subsequent step, these labels are used to train a model. This project aims to eliminate this separate step of obtaining labels and attempts to directly train the model in a self-supervised manner by designing a loss function.
+This project aims to train a model capable of guiding a vehicle from a starting position to a target position while avoiding collisions. It is based on the paper [Multi-Agent Navigation in Unconstrained Environments](https://arxiv.org/abs/2307.16727). In this paper, a model is trained to guide vehicles in a similar manner. However, it is done in a supervised way with labels obtained from an optimization algorithm. These labels are used to train a model. This project aims to eliminate the separate step of obtaining labels and attempts to directly train the model in a self-supervised manner by designing a loss function.
 
 ## Dynamic Vehicle Equation
 
-The dynamic vehicle control model simulates the vehicles based on control inputs. Position, angle, and velocity of the vehicle depend on the previous state. The model should predict the correct steering and pedal inputs to guide vehicles to their target position. The challenge here is the fact that such a vehicle model is a non-holonomic system, meaning that the position can only indirectly be influenced.
+The dynamic vehicle control model simulates the vehicles based on control inputs. Position, angle, and velocity of the vehicle depend on the previous state. The learned model should predict the correct steering and pedal inputs to guide vehicles to their target position. The challenge here is the fact that such a vehicle model is a non-holonomic system, meaning that the position can only indirectly be influenced.
 
 ![x_{t+1} Formula](https://latex.codecogs.com/svg.latex?x_{t+1}%20=%20x_t%20+%20v_t%20\cdot%20\cos(\theta_t)%20\cdot%20\Delta%20t)
 
